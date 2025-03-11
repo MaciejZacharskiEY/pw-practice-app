@@ -30,6 +30,20 @@ export class NavigationPage extends HelperBase {
         await this.page.getByText('Tooltip').click()
     }
 
+    async dialogPage() {
+        this.SelectGroupMenuItem('Modal & Overlays')  
+        await this.page.getByText('Dialog').click()
+    }
+
+    async windowPage() {
+        this.SelectGroupMenuItem('Modal & Overlays')  
+        await this.page.getByText('Window').click()
+    }
+    async popoverPage() {
+        this.SelectGroupMenuItem('Modal & Overlays')  
+        await this.page.getByText('Popover').click()
+    }
+
 
     async toastrPage() {
         this.SelectGroupMenuItem('Modal & Overlays')  
